@@ -21,6 +21,7 @@ CREATE TABLE user (
 ```sql
 USE sql_store;
 SELECT * FROM customers;
+SELeCT first_name, last_name FROM customers;
 ```
 
 ## Select data with Condition
