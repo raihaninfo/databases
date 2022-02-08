@@ -29,7 +29,7 @@ SELECT first_name, last_name FROM customers;
 -- mathematical logic
 SELECT points, points +1 FROM customers; -- result 2273, 2274
 SELECT points, points -1 FROM customers; -- result 2273, 2272
-SELECT points, points /10 FROM customers; -- result 2273, 2273.300
+SELECT points, points *10+100 FROM customers; -- result 2273, 22830
 ```
 
 ## Select data with Condition
