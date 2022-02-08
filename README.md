@@ -5,6 +5,7 @@
 > DROP DATABASE testDB2;
 
 > use testDB;
+
 ```
 CREATE TABLE user (
     user ID int,
