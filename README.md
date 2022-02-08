@@ -6,7 +6,7 @@
 
 > use testDB;
 
-```
+```sql
 CREATE TABLE user (
     userID int,
     FirstName varchar(255),
@@ -18,12 +18,13 @@ CREATE TABLE user (
 
 ## Select data
 
-```
-SELECT * FROM user;
+```sql
+USE sql_store;
+SELECT * FROM customers;
 ```
 
 ## Select data with Condition
 
-```
-SELECT * FROM user WHERE customer_id=1;
+```sql
+SELECT * FROM customers WHERE customer_id=1;
 ```
