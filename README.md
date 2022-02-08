@@ -19,9 +19,17 @@ CREATE TABLE user (
 ## Select data
 
 ```sql
+-- select database
 USE sql_store;
+-- select all data form customers
 SELECT * FROM customers;
-SELeCT first_name, last_name FROM customers;
+-- select first name and last name
+SELECT first_name, last_name FROM customers;
+
+-- mathematical logic
+SELECT points, points +1 FROM customers; -- result 2273, 2274
+SELECT points, points -1 FROM customers; -- result 2273, 2272
+SELECT points, points /10 FROM customers; -- result 2273, 2273.300
 ```
 
 ## Select data with Condition
