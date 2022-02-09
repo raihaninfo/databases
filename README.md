@@ -98,3 +98,17 @@ SELECT * FROM customers LIMIT 3; -- show only 3 result
 SELECT order_id, orders.customer_id, first_name, last_name FROM orders JOIN
 customers ON orders.customer_id = customers.customer_id;
 ```
+
+## SELF JOIN
+
+```sql
+SELECT * FROM employees e JOIN employees m ON e.reports_to = m.employee_id;
+```
+
+## JOIN Multiple Tables
+
+```sql
+SELECT * FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+JOIN order_statuses os ON o.status = os.order_status_id;
+```
