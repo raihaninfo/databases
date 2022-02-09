@@ -36,4 +36,17 @@ SELECT points, points *10+100 FROM customers; -- result 2273, 22830
 
 ```sql
 SELECT * FROM customers WHERE customer_id=1;
+SELECT * FROM customers WHERE birth_date > '1990-01-01';
+```
+
+## AND, OR and NOT Operators
+
+```sql
+SELECT * FROM customers WHERE birth_date > '1990-01-01' AND points >1000;
+SELECT * FROM customers WHERE birth_date > '1990-01-01' OR points >1000;
+SELECT * FROM customers WHERE NOT birth_date > '1990-01-01';
+-- Result:= show all customers points between 1000 to 3000
+SELECT * FROM customers WHERE points >=1000 AND points <=3000;
+-- BETWEEN operators
+SELECT * FROM customers WHERE points BETWEEN 1000 AND 3000;
 ```
