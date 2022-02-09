@@ -70,3 +70,10 @@ SELECT * FROM customers WHERE last_name LIKE 'b%';
 SELECT * FROM customers WHERE last_name REGEXP 'field|mac|rose';
 SELECT * FROM customers WHERE last_name REGEXP '[gim]e'; -- ge, ie, me
 ```
+
+## NULL operator
+
+```sql
+SELECT * FROM customers WHERE phone IS NULL;
+SELECT * FROM customers WHERE phone IS NOT NULL;
+```
