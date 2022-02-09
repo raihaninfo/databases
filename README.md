@@ -77,3 +77,24 @@ SELECT * FROM customers WHERE last_name REGEXP '[gim]e'; -- ge, ie, me
 SELECT * FROM customers WHERE phone IS NULL;
 SELECT * FROM customers WHERE phone IS NOT NULL;
 ```
+
+## ORDER
+
+```sql
+SELECT * FROM customers ORDER BY first_name;
+SELECT * FROM customers ORDER BY first_name DESC;
+```
+
+## LIMIT
+
+```sql
+SELECT * FROM customers LIMIT 3; -- show only 3 result
+
+```
+
+## Inner join
+
+```sql
+SELECT order_id, orders.customer_id, first_name, last_name FROM orders JOIN
+customers ON orders.customer_id = customers.customer_id;
+```
