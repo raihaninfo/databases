@@ -50,3 +50,23 @@ SELECT * FROM customers WHERE points >=1000 AND points <=3000;
 -- BETWEEN operators
 SELECT * FROM customers WHERE points BETWEEN 1000 AND 3000;
 ```
+
+## LIKE Operator
+
+```sql
+-- LIKE operator use search for any string
+SELECT * FROM customers WHERE last_name LIKE 'b%';
+```
+
+## REGEXP operator
+
+> https://www.educba.com/sql-regexp/
+
+> https://dataschool.com/how-to-teach-people-sql/how-regex-works-in-sql/
+
+[REGEXP online practice](https://regex101.com/)
+
+```sql
+SELECT * FROM customers WHERE last_name REGEXP 'field|mac|rose';
+SELECT * FROM customers WHERE last_name REGEXP '[gim]e'; -- ge, ie, me
+```
